@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Principal</title>
+    <link rel="stylesheet" href="headerStyle.css">
+    <link rel="stylesheet" href="vista_principal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+
+</head>
+<body>
+    <header>
+        <div class="logo-libreria">
+            <a href="./vista_principal.html"><img src="../img/logoutp.png" alt="Logo UTP"></a>
+        </div>
+        <section class="header-container">
+            <div class="info-page-container">
+                <h1 class="title-libreria">Libreria UTP</h1>
+                <div class="user-container">
+                    <a id="btn-visitante">Visitante</a>
+                    <a id="btn-login" href="LogIn/vista_login.html">Login</a>
+                    <div class="img-container">
+                        <img alt="" src="">
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <section class="subpages-container">
+                    <a id="noticias-section" href="#">Noticias</a>
+                    <a id="libros-section" href="#">Libros</a>
+                </section>
+                <div class="search-section">
+                    <div class="search-container">
+                        <span class="material-symbols-outlined">search</span>
+                        <input type="search" placeholder="Buscar Libros...">
+                        <span class="material-symbols-outlined">mic</span>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+
+
+    <!--Contenedor Publicidad e Información General-->
+    <main>
+        <!--Publicidad-->
+        <section class="publicidad-section">
+            <div class="publicidad-container">
+                <div class="publicidad-img-container">
+                    <img alt="Publicidad1" src="./img/publicidad-1.jpg">
+                </div>
+                <a href="#" class="title-publicidad">Inteligencia Artificial Aplicada en las Empresas</a>
+            </div>
+
+            <div class="publicidad-container">
+                <div class="publicidad-img-container">
+                    <img alt="Publicidad2" src="./img/publicidad-2.jpg">
+                </div>
+                <a href="#" class="title-publicidad">El CDTA de la Universidad Tecnológica de Pereira, la gran apuesta para el desarrollo agroindustrial de la región y el país</a>
+            </div>
+        </section>
+
+        <div class="info-general-container">
+            <div class="libro-container" id="libro1">
+                <div class="libro-img-container"><img src="./img/libro.png" alt="Libro1"></div>
+                <div class="libro-info-container">
+                    <p class="p title-libro">Análisis y diseño de un administrador de contenido web para soportar la operación de un centro comercial virtual</p>
+                    <p class="autores">Alvarez Villanueva , Juliana ; Barragán Restrepo, Diego Alejandro; Veloza Mora, Juan de Jesús</p>
+                </div>
+            </div>
+
+            <div class="libro-container" id="libro1">
+                <div class="libro-img-container"><img src="./img/libro.png" alt="Libro2"></div>
+                <div class="libro-info-container">
+                    <p class="p title-libro">	Automatización y control de forma remota del observatorio astronómico de la Universidad Tecnológica de Pereira</p>
+                    <p class="autores">Martínez Orozco, Jefferson; Henao Toro, Daniel Felipe ; Quintero Salazar, Edwin Andrés</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

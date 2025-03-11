@@ -1,0 +1,153 @@
+:root {
+    --color-letter: #E8DDCB;
+    --button-color: #036564;
+    --button-hover: #057775;
+    --background-section: #031634;
+    --background-subsection: #033649;
+}
+
+/*______________________________________________________________*/
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main > .publicidad-section {
+    margin-top: 0.4rem;
+    width: 100%;
+    height: 65%;
+
+}
+
+main > .info-general-container {
+    margin-top: 0.5rem;
+    height: auto;
+    width: 100%;
+}
+
+
+main > .publicidad-section,
+main > .info-general-container {
+    background-color: var(--background-section); /* Azul verdoso oscuro */
+    border: 2px solid var(--color-letter);
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+
+
+/*Publicidad*/
+.publicidad-section{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.publicidad-container{
+    width: 100%;
+    height: auto;
+    border-radius: 0.4rem;
+    background-color: var(--background-subsection);
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.publicidad-container > .publicidad-img-container{
+    max-height: 70%;
+    width: auto;
+}
+
+.publicidad-container > .publicidad-img-container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    cursor: pointer;
+    border: 2px solid var(--color-letter);
+}
+
+.title-publicidad{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+}
+
+.title-publicidad:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* Sección Libros */
+.info-general-container {
+    display: flex;
+    flex-flow: column nowrap;
+    color: var(--color-letter);
+    padding: 1rem; /* Espaciado externo */
+    gap: 1rem;
+}
+
+.libro-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.5rem; /* Más espacio entre la imagen y el texto */
+    background-color: var(--background-subsection);
+    border-radius: 0.8rem; /* Bordes más redondeados */
+    padding: 1.5rem; /* Más espaciado interno */
+    width: 100%; /* Ocupar todo el ancho disponible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border: 1px solid var(--color-letter); /* Borde sutil */
+}
+
+.libro-img-container {
+    max-width: 150px; /* Limitar el ancho de la imagen */
+    width: 100%;
+    display: flex;
+    align-items: center; /* Centrar la imagen verticalmente */
+}
+
+.libro-img-container > img {
+    width: 100%;
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 0.4rem; /* Bordes redondeados para la imagen */
+}
+
+.libro-info-container {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%; /* Ocupar el espacio restante */
+}
+
+.libro-info-container > .title-libro {
+    font-size: 1.25rem; /* Tamaño de fuente más grande */
+    font-weight: 600; /* Texto en negrita */
+    color: var(--color-letter);
+    margin: 0; /* Eliminar margen predeterminado */
+    line-height: 1.4; /* Mejor interlineado */
+}
+
+.libro-info-container > .autores {
+    font-size: 1rem;
+    color: var(--color-letter);
+    opacity: 0.8; /* Texto un poco más suave */
+    margin: 0; /* Eliminar margen predeterminado */
+    width: 100%; /* Ocupar todo el ancho */
+}
